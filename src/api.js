@@ -1,6 +1,7 @@
 import axios from "axios";
 
 
+
 export const searchImages = async (term) => {
     const response = await axios.get('https://api.unsplash.com/search/photos', {
         headers: {
@@ -10,6 +11,9 @@ export const searchImages = async (term) => {
             query: term
         }
     });
+    console.log(response);
 
     return response.data.results;
 }
+
+
