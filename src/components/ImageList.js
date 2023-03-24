@@ -1,11 +1,16 @@
 import React from 'react';
+import ImageShow from "./ImageShow";
 
 export const ImageList = ({images}) => {
 
-    console.log(images)
+    const renderedImages = images.map(image => {
+        return  <ImageShow image={image} key={image.id}/>
+    });
+
+
     return (
         <div>
-            Image List: {images.length}
+            {renderedImages}
         </div>
     );
 };
