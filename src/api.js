@@ -11,6 +11,7 @@ export const searchImages = async (term) => {
             query: term
         }
     });
+
     console.log(response);
 
     return response.data.results;

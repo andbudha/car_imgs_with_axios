@@ -6,11 +6,14 @@ export const SearchBar = ({onSubmit}) => {
     const[inputValue, setInputValue]=useState('');
     const handleFormSubmit = (event) => {
         event.preventDefault();
+        onSubmit(inputValue);
     }
 
     const onChangeHandler = (event) => {
-      setInputValue(event.currentTarget.value)
+      setInputValue(event.currentTarget.value);
     }
+
+
 
 
     return (

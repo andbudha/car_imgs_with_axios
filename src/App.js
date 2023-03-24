@@ -7,7 +7,7 @@ import {searchImages} from "./api";
 const App = () => {
 
     const handleSubmit = (term) => {
-        searchImages(term).then(data=>data).catch(err=>err);
+        searchImages(term);
     }
 
     return (
