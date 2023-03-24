@@ -12,8 +12,6 @@ export const searchImages = async (term) => {
         }
     });
 
-    console.log(response);
-
     return response.data.results;
 }
 
